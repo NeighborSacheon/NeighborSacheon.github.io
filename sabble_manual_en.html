@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabble Game Manual (EN)</title>
+<style>
+  :root{
+    --fg:#111;
+    --muted:#555;
+    --accent:#5b74f9;
+    --border:#e6e6e6;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:880px;margin:24px auto;padding:20px}
+  header{border-bottom:1px solid var(--border);margin-bottom:20px;padding-bottom:12px}
+  header h1{font-size:28px;margin:0}
+  header p{margin:6px 0;color:var(--muted)}
+  nav.toc{background:#fafafa;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0 28px}
+  nav.toc strong{display:block;margin-bottom:6px}
+  nav.toc ol{margin:0 0 0 1rem;padding:0}
+  section{margin:26px 0}
+  h2{font-size:22px;margin:0 0 10px}
+  h3{font-size:18px;margin:18px 0 8px}
+  .card{border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0;background:white}
+  ul,ol{padding-left:1.2rem}
+  .tip{border-left:4px solid #00b894;background:#f5fffa;padding:12px;border-radius:8px;margin:12px 0}
+  .warn{border-left:4px solid #e17055;background:#fff8f6;padding:12px;border-radius:8px;margin:12px 0}
+  footer{margin-top:32px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:12px}
+
+  /* Print styles */
+  @media print{
+    body{color:#000}
+    a{text-decoration:none;color:#000}
+    nav.toc{break-inside:avoid}
+    section{page-break-inside:avoid}
+    .container{max-width:100%;margin:0;padding:0 10mm}
+    header, footer{border:none}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 Sabble Game Manual</h1>
+      <p>A fast-paced pattern-matching card game for families and friends</p>
+    </header>
+
+    <nav class="toc">
+      <strong>Table of Contents</strong>
+      <ol>
+        <li><a href="#sec-1">1. Overview</a></li>
+        <li><a href="#sec-2">2. How It Works</a></li>
+        <li><a href="#sec-3">3. How to Play</a>
+          <ol>
+            <li><a href="#sec-3-1">3-1. Build the Tower (Basic Mode)</a>
+              <ol>
+                <li><a href="#sec-3-1-1">3-1-1. Setup</a></li>
+                <li><a href="#sec-3-1-2">3-1-2. Gameplay</a></li>
+                <li><a href="#sec-3-1-3">3-1-3. Win Condition</a></li>
+              </ol>
+            </li>
+            <li><a href="#sec-3-2">3-2. Break the Tower</a></li>
+            <li><a href="#sec-3-3">3-3. Hot Potato</a></li>
+            <li><a href="#sec-3-4">3-4. Card Collector</a></li>
+            <li><a href="#sec-3-5">3-5. Sabble Domino</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec-4">4. Tips</a></li>
+        <li><a href="#sec-5">5. Safety Notes</a></li>
+      </ol>
+    </nav>
+
+    <section id="sec-1" class="card">
+      <h2>1. Overview</h2>
+      <ul>
+        <li><strong>Game Title:</strong> Sabble</li>
+        <li><strong>Players:</strong> 2–8</li>
+        <li><strong>Recommended Age:</strong> 6+</li>
+        <li><strong>Play Time:</strong> ~10–15 minutes</li>
+        <li><strong>Components:</strong> 55 symbol cards (each card shows 8 different symbols)</li>
+      </ul>
+      <p><strong>Objective:</strong> Be the first to spot and call out the <em>one matching symbol</em> between two cards!</p>
+    </section>
+
+    <section id="sec-2" class="card">
+      <h2>2. How It Works</h2>
+      <p>Any two cards in Sabble share <strong>exactly one symbol</strong> in common. Compare Card A and Card B—there is always one and only one matching symbol. 
+      Your goal is to <strong>find that match faster</strong> than everyone else and call it out.</p>
+    </section>
+
+    <section id="sec-3" class="card">
+      <h2>3. How to Play</h2>
+      <p>Sabble offers multiple modes. The classic is <strong>Build the Tower</strong>, and variants include <strong>Break the Tower</strong>, <strong>Hot Potato</strong>, <strong>Card Collector</strong>, and <strong>Sabble Domino</strong>.</p>
+
+      <section id="sec-3-1">
+        <h3>3-1. Build the Tower (Basic Mode)</h3>
+
+        <section id="sec-3-1-1">
+          <h4>3-1-1. Setup</h4>
+          <ol>
+            <li>Shuffle the whole deck.</li>
+            <li>Deal 1 card face up to each player. Place the rest face down in the center as the draw pile.</li>
+            <li>Flip the top card of the pile to start the round.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-2">
+          <h4>3-1-2. Gameplay</h4>
+          <ol>
+            <li>All players look for the <strong>one matching symbol</strong> between their card and the center card.</li>
+            <li>When you spot it, <strong>call the symbol out loud</strong> immediately.</li>
+            <li>The first correct caller takes the center card.</li>
+            <li>Flip a new center card and continue.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-3">
+          <h4>3-1-3. Win Condition</h4>
+          <ul>
+            <li>The player who collects the <strong>most cards</strong> wins when the deck is exhausted.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="sec-3-2">
+        <h3>3-2. Break the Tower</h3>
+        <h4>Setup</h4>
+        <ol>
+          <li>Deal the <strong>same number of cards</strong> to all players. Each holds a personal face-down pile and flips the top card face up.</li>
+        </ol>
+        <h4>Gameplay</h4>
+        <ol>
+          <li>Spot the match between your card and the center card.</li>
+          <li>When correct, place <strong>your card</strong> onto the center pile.</li>
+        </ol>
+        <h4>Win Condition</h4>
+        <ul>
+          <li>The first to <strong>get rid of all cards</strong> wins.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-3">
+        <h3>3-3. Hot Potato</h3>
+        <h4>Setup</h4>
+        <ol>
+          <li>Deal 1 card to each player. Hold it so only you can see it (face towards yourself).</li>
+        </ol>
+        <h4>Gameplay</h4>
+        <ol>
+          <li>Find the match between your card and another player’s card.</li>
+          <li>Call the player’s name and the symbol (e.g., “Minsu, Skull!”) and hand your card to them.</li>
+          <li>The receiver now has more cards and must find a match quickly to pass a card on.</li>
+        </ol>
+        <h4>Win Condition</h4>
+        <ul>
+          <li>At the end of the round, players with <strong>no cards</strong> win; the one with the <strong>most cards</strong> loses.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-4">
+        <h3>3-4. Card Collector</h3>
+        <h4>Setup</h4>
+        <ol>
+          <li>Place 1 card face up in the center.</li>
+          <li>Keep the rest as a face-down draw pile.</li>
+        </ol>
+        <h4>Gameplay</h4>
+        <ol>
+          <li>Flip a new card from the draw pile and find the match with the center card.</li>
+          <li>The first correct caller takes the new card.</li>
+          <li>Repeat, updating the center reference each time.</li>
+        </ol>
+        <h4>Win Condition</h4>
+        <ul>
+          <li>When the deck is gone, the player with the <strong>most collected cards</strong> wins.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-5">
+        <h3>3-5. Sabble Domino</h3>
+        <h4>Setup</h4>
+        <ol>
+          <li>Shuffle all cards and deal 5 to each player.</li>
+          <li>Place 1 card in the center as the starting tile.</li>
+        </ol>
+        <h4>Gameplay</h4>
+        <ol>
+          <li>From your hand, play a card that shares a <strong>matching symbol</strong> with the current center/end card.</li>
+          <li>The card you play becomes the new <strong>reference card</strong>.</li>
+          <li>Continue clockwise, forming a chain like dominoes.</li>
+        </ol>
+        <h4>Win Condition</h4>
+        <ul>
+          <li>The first to <strong>play all cards</strong> wins. Fewer remaining cards are better.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-4" class="card">
+      <h2>4. Tips</h2>
+      <div class="tip">
+        <ul>
+          <li><strong>Speed + Accuracy</strong> decide the game—call what you see first.</li>
+          <li>Scanning the <strong>edges</strong> of a card can be faster than looking at the center.</li>
+          <li>With kids, slow the pace so everyone enjoys the game.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec-5" class="card">
+      <h2>5. Safety Notes</h2>
+      <div class="warn">
+        <ul>
+          <li>Do not fold or crease the cards.</li>
+          <li>Keep cards away from small children’s mouths.</li>
+          <li>Store in a dry, cool place.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025. Sabble Manual (EN). Prepared for print and distribution.</p>
+    </footer>
+  </div>
+</body>
+</html>

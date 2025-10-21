@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>사블(Sabble) 게임 설명서</title>
+<style>
+  :root{
+    --fg:#111;
+    --muted:#555;
+    --accent:#5b74f9;
+    --border:#e6e6e6;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic',sans-serif;line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:880px;margin:24px auto;padding:20px}
+  header{border-bottom:1px solid var(--border);margin-bottom:20px;padding-bottom:12px}
+  header h1{font-size:28px;margin:0}
+  header p{margin:6px 0;color:var(--muted)}
+  nav.toc{background:#fafafa;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0 28px}
+  nav.toc strong{display:block;margin-bottom:6px}
+  nav.toc ol{margin:0 0 0 1rem;padding:0}
+  section{margin:26px 0}
+  h2{font-size:22px;margin:0 0 10px}
+  h3{font-size:18px;margin:18px 0 8px}
+  .card{border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0;background:white}
+  ul,ol{padding-left:1.2rem}
+  .tip{border-left:4px solid #00b894;background:#f5fffa;padding:12px;border-radius:8px;margin:12px 0}
+  .warn{border-left:4px solid #e17055;background:#fff8f6;padding:12px;border-radius:8px;margin:12px 0}
+  footer{margin-top:32px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:12px}
+
+  /* Print styles */
+  @media print{
+    body{color:#000}
+    a{text-decoration:none;color:#000}
+    nav.toc{break-inside:avoid}
+    section{page-break-inside:avoid}
+    .container{max-width:100%;margin:0;padding:0 10mm}
+    header, footer{border:none}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 사블(Sabble) 게임 설명서</h1>
+      <p>가족, 친구, 연인과 빠르게 즐기는 관찰력 &amp; 순발력 카드 게임</p>
+    </header>
+
+    <nav class="toc">
+      <strong>목차</strong>
+      <ol>
+        <li><a href="#sec-1">개요</a></li>
+        <li><a href="#sec-2">게임 원리</a></li>
+        <li><a href="#sec-3">게임방법</a>
+          <ol>
+            <li><a href="#sec-3-1">3-1. 타워 만들기</a>
+              <ol>
+                <li><a href="#sec-3-1-1">3-1-1. 게임 준비</a></li>
+                <li><a href="#sec-3-1-2">3-1-2. 진행 방법</a></li>
+                <li><a href="#sec-3-1-3">3-1-3. 승리조건</a></li>
+              </ol>
+            </li>
+            <li><a href="#sec-3-2">3-2. 타워 부수기</a></li>
+            <li><a href="#sec-3-3">3-3. 핫 포테이토</a></li>
+            <li><a href="#sec-3-4">3-4. 카드 수집가</a></li>
+            <li><a href="#sec-3-5">3-5. 도미노 연결</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec-4">게임 팁</a></li>
+        <li><a href="#sec-5">주의사항</a></li>
+      </ol>
+    </nav>
+
+    <section id="sec-1" class="card">
+      <h2>1. 개요</h2>
+      <ul>
+        <li><strong>게임 이름:</strong> 사블 (Sabble)</li>
+        <li><strong>인원:</strong> 2~8명</li>
+        <li><strong>권장 연령:</strong> 6세 이상</li>
+        <li><strong>플레이 시간:</strong> 약 10~15분</li>
+        <li><strong>구성품:</strong> 그림 카드 55장 (각 카드마다 8개의 그림)</li>
+      </ul>
+      <p><strong>게임 목표:</strong> 서로 다른 카드에서 <em>공통된 그림</em>을 가장 먼저 찾아 외치는 사람이 승리합니다!</p>
+    </section>
+
+    <section id="sec-2" class="card">
+      <h2>2. 게임 원리</h2>
+      <p>사블의 모든 카드는 서로 비교했을 때 <strong>단 하나의 그림만 동일</strong>합니다.
+      카드 A와 카드 B를 비교하면 8개의 그림 중 오직 하나만 같습니다.
+      플레이어는 이 <strong>공통된 그림</strong>을 가장 빠르게 찾아 외치는 것이 핵심입니다.</p>
+    </section>
+
+    <section id="sec-3" class="card">
+      <h2>3. 게임방법</h2>
+      <p>사블은 다양한 모드로 즐길 수 있습니다. 기본 모드는 <strong>타워 만들기</strong>, 응용 모드는 <strong>타워 부수기</strong>, <strong>핫 포테이토</strong>, <strong>카드 수집가</strong>, <strong>도미노 연결</strong>이 있습니다.</p>
+
+      <section id="sec-3-1">
+        <h3>3-1. 타워 만들기 (기본 모드)</h3>
+
+        <section id="sec-3-1-1">
+          <h4>3-1-1. 게임 준비</h4>
+          <ol>
+            <li>카드 전체를 잘 섞습니다.</li>
+            <li>모든 플레이어에게 카드 1장씩 나눠 주고, 나머지는 <strong>중앙에 뒤집어 더미</strong>로 둡니다.</li>
+            <li>더미 맨 위 한 장을 뒤집어 <strong>시작 카드</strong>로 펼칩니다.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-2">
+          <h4>3-1-2. 진행 방법</h4>
+          <ol>
+            <li>각자는 자신의 카드와 중앙 카드에서 <strong>공통된 그림</strong> 하나를 찾습니다.</li>
+            <li>발견 즉시 그 이름을 <strong>크게 외칩니다</strong>.</li>
+            <li>가장 먼저 외친 사람이 중앙 카드를 가져갑니다.</li>
+            <li>새 카드를 중앙에 뒤집고 다음 라운드를 이어갑니다.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-3">
+          <h4>3-1-3. 승리조건</h4>
+          <ul>
+            <li>게임 종료 시 <strong>가장 많은 카드를 모은 사람</strong>이 승리합니다.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="sec-3-2">
+        <h3>3-2. 타워 부수기 (Reverse Tower)</h3>
+        <h4>게임 준비</h4>
+        <ol>
+          <li>모든 플레이어에게 <strong>같은 수의 카드</strong>를 나눠 줍니다.</li>
+          <li>각자는 자신의 카드 더미를 손에 들고, 맨 위 한 장을 앞면으로 엽니다.</li>
+        </ol>
+        <h4>진행 방법</h4>
+        <ol>
+          <li>자신의 카드와 중앙 카드에서 공통된 그림을 찾습니다.</li>
+          <li>맞춘 사람은 <strong>자신의 카드</strong>를 중앙 더미에 올립니다.</li>
+        </ol>
+        <h4>승리조건</h4>
+        <ul>
+          <li><strong>손에 든 카드를 가장 먼저 모두 소진</strong>한 사람이 승리합니다.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-3">
+        <h3>3-3. 핫 포테이토 (Hot Potato)</h3>
+        <h4>게임 준비</h4>
+        <ol>
+          <li>각 플레이어에게 카드 1장씩 나눠 줍니다.</li>
+          <li>각자는 카드를 손에 들고 앞면을 자신 쪽으로 향하게 합니다.</li>
+        </ol>
+        <h4>진행 방법</h4>
+        <ol>
+          <li>서로의 카드와 자신의 카드에서 공통된 그림을 찾습니다.</li>
+          <li>발견하면 대상 플레이어의 이름과 그림 이름을 외치며 그에게 카드를 넘깁니다. <em>예: “민수, 해골!”</em></li>
+          <li>받은 사람은 손에 늘어난 카드 중 공통된 그림을 찾아 다시 다른 사람에게 넘깁니다.</li>
+        </ol>
+        <h4>승리조건</h4>
+        <ul>
+          <li>라운드 종료 시 <strong>손에 카드가 없는 사람</strong>이 승리합니다.</li>
+          <li><strong>카드를 가장 많이 가진 사람</strong>은 패배합니다.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-4">
+        <h3>3-4. 카드 수집가 (Card Collector)</h3>
+        <h4>게임 준비</h4>
+        <ol>
+          <li>중앙에 카드 1장을 펼칩니다.</li>
+          <li>나머지는 뒤집어 더미로 놓습니다.</li>
+        </ol>
+        <h4>진행 방법</h4>
+        <ol>
+          <li>중앙 카드와 새로 뒤집는 카드에서 공통된 그림을 찾습니다.</li>
+          <li>가장 먼저 외친 사람이 새 카드를 가져갑니다.</li>
+          <li>중앙 기준 카드를 갱신하며 반복합니다.</li>
+        </ol>
+        <h4>승리조건</h4>
+        <ul>
+          <li>게임 종료 시 <strong>가장 많은 카드를 획득</strong>한 사람이 승리합니다.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-5">
+        <h3>3-5. 도미노 연결 (Sabble Domino)</h3>
+        <h4>게임 준비</h4>
+        <ol>
+          <li>모든 카드를 잘 섞어 뒤집어 놓습니다.</li>
+          <li>각자 5장씩 나눠 받습니다.</li>
+          <li>중앙에 카드 1장을 펼칩니다.</li>
+        </ol>
+        <h4>진행 방법</h4>
+        <ol>
+          <li>자신의 손패 중 중앙 카드와 <strong>공통된 그림</strong>이 있는 카드를 찾아 옆에 이어 놓습니다.</li>
+          <li>내려놓은 카드가 새로운 <strong>기준 카드</strong>가 됩니다.</li>
+          <li>순서대로 반복하며 도미노처럼 연결합니다.</li>
+        </ol>
+        <h4>승리조건</h4>
+        <ul>
+          <li><strong>자신의 카드를 모두 내려놓은 사람</strong>이 승리합니다.</li>
+          <li>남은 카드가 적을수록 유리합니다.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-4" class="card">
+      <h2>4. 게임 팁</h2>
+      <div class="tip">
+        <ul>
+          <li><strong>속도 &amp; 정확도</strong>가 관건입니다. 보이는 그림부터 빠르게 외치세요.</li>
+          <li><strong>테두리 먼저</strong> 훑으면 공통된 그림이 더 잘 보일 수 있습니다.</li>
+          <li>아이들과는 난이도를 낮추고, 라운드 시간을 넉넉히 주세요.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec-5" class="card">
+      <h2>5. 주의사항</h2>
+      <div class="warn">
+        <ul>
+          <li>카드를 접거나 구기지 마세요.</li>
+          <li>어린아이가 카드를 입에 넣지 않도록 주의하세요.</li>
+          <li>습기 없는 서늘한 곳에 보관하세요.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025. Sabble Manual (KR). 본 문서는 인쇄 및 배포용으로 제작되었습니다.</p>
+    </footer>
+  </div>
+</body>
+</html>

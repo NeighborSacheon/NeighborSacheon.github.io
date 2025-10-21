@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sách hướng dẫn trò chơi Sabble (VI)</title>
+<style>
+  :root{
+    --fg:#111;
+    --muted:#555;
+    --accent:#5b74f9;
+    --border:#e6e6e6;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,'Noto Sans','Noto Sans Vietnamese',sans-serif;line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:880px;margin:24px auto;padding:20px}
+  header{border-bottom:1px solid var(--border);margin-bottom:20px;padding-bottom:12px}
+  header h1{font-size:28px;margin:0}
+  header p{margin:6px 0;color:var(--muted)}
+  nav.toc{background:#fafafa;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0 28px}
+  nav.toc strong{display:block;margin-bottom:6px}
+  nav.toc ol{margin:0 0 0 1rem;padding:0}
+  section{margin:26px 0}
+  h2{font-size:22px;margin:0 0 10px}
+  h3{font-size:18px;margin:18px 0 8px}
+  .card{border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0;background:white}
+  ul,ol{padding-left:1.2rem}
+  .tip{border-left:4px solid #00b894;background:#f5fffa;padding:12px;border-radius:8px;margin:12px 0}
+  .warn{border-left:4px solid #e17055;background:#fff8f6;padding:12px;border-radius:8px;margin:12px 0}
+  footer{margin-top:32px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:12px}
+
+  @media print{
+    body{color:#000}
+    a{text-decoration:none;color:#000}
+    nav.toc{break-inside:avoid}
+    section{page-break-inside:avoid}
+    .container{max-width:100%;margin:0;padding:0 10mm}
+    header, footer{border:none}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 Sách hướng dẫn trò chơi Sabble</h1>
+      <p>Trò chơi thẻ quan sát &amp; phản xạ nhanh dành cho gia đình và bạn bè</p>
+    </header>
+
+    <nav class="toc">
+      <strong>Mục lục</strong>
+      <ol>
+        <li><a href="#sec-1">1. Tổng quan</a></li>
+        <li><a href="#sec-2">2. Cách hoạt động</a></li>
+        <li><a href="#sec-3">3. Cách chơi</a>
+          <ol>
+            <li><a href="#sec-3-1">3-1. Xây tháp (Chế độ cơ bản)</a>
+              <ol>
+                <li><a href="#sec-3-1-1">3-1-1. Chuẩn bị</a></li>
+                <li><a href="#sec-3-1-2">3-1-2. Diễn biến</a></li>
+                <li><a href="#sec-3-1-3">3-1-3. Điều kiện thắng</a></li>
+              </ol>
+            </li>
+            <li><a href="#sec-3-2">3-2. Phá tháp</a></li>
+            <li><a href="#sec-3-3">3-3. Khoai tây nóng</a></li>
+            <li><a href="#sec-3-4">3-4. Nhà sưu tầm thẻ</a></li>
+            <li><a href="#sec-3-5">3-5. Sabble Domino</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec-4">4. Mẹo chơi</a></li>
+        <li><a href="#sec-5">5. Lưu ý an toàn</a></li>
+      </ol>
+    </nav>
+
+    <section id="sec-1" class="card">
+      <h2>1. Tổng quan</h2>
+      <ul>
+        <li><strong>Tên trò chơi:</strong> Sabble</li>
+        <li><strong>Số người chơi:</strong> 2–8</li>
+        <li><strong>Độ tuổi khuyến nghị:</strong> từ 6+</li>
+        <li><strong>Thời gian chơi:</strong> khoảng 10–15 phút</li>
+        <li><strong>Thành phần:</strong> 55 thẻ biểu tượng (mỗi thẻ có 8 biểu tượng khác nhau)</li>
+      </ul>
+      <p><strong>Mục tiêu:</strong> Là người <em>đầu tiên</em> phát hiện và hô to <em>một biểu tượng trùng khớp</em> giữa hai thẻ!</p>
+    </section>
+
+    <section id="sec-2" class="card">
+      <h2>2. Cách hoạt động</h2>
+      <p>Bất kỳ hai thẻ nào trong Sabble cũng có <strong>chính xác một biểu tượng chung</strong>. Khi so sánh Thẻ A và Thẻ B, luôn tồn tại một và chỉ một biểu tượng khớp nhau.
+      Mục tiêu của bạn là <strong>tìm biểu tượng đó nhanh hơn</strong> mọi người và hô to ngay lập tức.</p>
+    </section>
+
+    <section id="sec-3" class="card">
+      <h2>3. Cách chơi</h2>
+      <p>Sabble có nhiều biến thể luật. Cổ điển nhất là <strong>Xây tháp</strong>, ngoài ra còn có <strong>Phá tháp</strong>, <strong>Khoai tây nóng</strong>, <strong>Nhà sưu tầm thẻ</strong>, và <strong>Sabble Domino</strong>.</p>
+
+      <section id="sec-3-1">
+        <h3>3-1. Xây tháp (Chế độ cơ bản)</h3>
+
+        <section id="sec-3-1-1">
+          <h4>3-1-1. Chuẩn bị</h4>
+          <ol>
+            <li>Xào trộn toàn bộ bộ thẻ.</li>
+            <li>Chia cho mỗi người 1 thẻ ngửa. Phần còn lại úp xuống giữa bàn thành chồng bốc.</li>
+            <li>Lật thẻ trên cùng của chồng bốc để bắt đầu ván.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-2">
+          <h4>3-1-2. Diễn biến</h4>
+          <ol>
+            <li>Tất cả người chơi tìm <strong>một biểu tượng trùng khớp</strong> giữa thẻ của mình và thẻ ở giữa.</li>
+            <li>Khi phát hiện, hãy <strong>hô to tên biểu tượng</strong> ngay lập tức.</li>
+            <li>Người hô đúng đầu tiên lấy thẻ ở giữa.</li>
+            <li>Lật thẻ mới ở giữa và tiếp tục.</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-3">
+          <h4>3-1-3. Điều kiện thắng</h4>
+          <ul>
+            <li>Khi hết thẻ, người <strong>thu thập được nhiều thẻ nhất</strong> chiến thắng.</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="sec-3-2">
+        <h3>3-2. Phá tháp</h3>
+        <h4>Chuẩn bị</h4>
+        <ol>
+          <li>Chia <strong>số thẻ bằng nhau</strong> cho tất cả người chơi. Mỗi người cầm một chồng thẻ úp và lật thẻ trên cùng ngửa lên.</li>
+        </ol>
+        <h4>Diễn biến</h4>
+        <ol>
+          <li>Tìm biểu tượng trùng khớp giữa thẻ của bạn và thẻ ở giữa.</li>
+          <li>Nếu đúng, đặt <strong>thẻ của bạn</strong> lên chồng thẻ ở giữa.</li>
+        </ol>
+        <h4>Điều kiện thắng</h4>
+        <ul>
+          <li>Người <strong>hết thẻ trên tay đầu tiên</strong> chiến thắng.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-3">
+        <h3>3-3. Khoai tây nóng</h3>
+        <h4>Chuẩn bị</h4>
+        <ol>
+          <li>Chia cho mỗi người 1 thẻ. Cầm thẻ sao cho chỉ bạn nhìn thấy (mặt thẻ hướng về phía bạn).</li>
+        </ol>
+        <h4>Diễn biến</h4>
+        <ol>
+          <li>Tìm biểu tượng trùng khớp giữa thẻ của bạn và thẻ của người chơi khác.</li>
+          <li>Gọi tên người đó và tên biểu tượng (ví dụ: “Minh, Đầu lâu!”) rồi đưa thẻ của bạn cho họ.</li>
+          <li>Người nhận có nhiều thẻ hơn và phải nhanh chóng tìm khớp để chuyền tiếp.</li>
+        </ol>
+        <h4>Điều kiện thắng</h4>
+        <ul>
+          <li>Cuối vòng, ai <strong>không còn thẻ</strong> là người thắng; người có <strong>nhiều thẻ nhất</strong> là thua.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-4">
+        <h3>3-4. Nhà sưu tầm thẻ</h3>
+        <h4>Chuẩn bị</h4>
+        <ol>
+          <li>Đặt 1 thẻ ngửa ở giữa bàn.</li>
+          <li>Phần còn lại làm chồng bốc úp.</li>
+        </ol>
+        <h4>Diễn biến</h4>
+        <ol>
+          <li>Lật thẻ mới từ chồng bốc và tìm biểu tượng trùng với thẻ ở giữa.</li>
+          <li>Người hô đúng đầu tiên lấy thẻ mới.</li>
+          <li>Lặp lại, cập nhật thẻ tham chiếu ở giữa mỗi lần.</li>
+        </ol>
+        <h4>Điều kiện thắng</h4>
+        <ul>
+          <li>Khi hết thẻ, người <strong>thu thập được nhiều thẻ nhất</strong> chiến thắng.</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-5">
+        <h3>3-5. Sabble Domino</h3>
+        <h4>Chuẩn bị</h4>
+        <ol>
+          <li>Xào toàn bộ thẻ và chia cho mỗi người 5 thẻ.</li>
+          <li>Đặt 1 thẻ ở giữa làm thẻ bắt đầu.</li>
+        </ol>
+        <h4>Diễn biến</h4>
+        <ol>
+          <li>Từ tay bạn, đánh ra một thẻ có <strong>biểu tượng trùng khớp</strong> với thẻ trung tâm/đầu chuỗi hiện tại.</li>
+          <li>Thẻ bạn đánh ra trở thành <strong>thẻ tham chiếu</strong> mới.</li>
+          <li>Tiếp tục theo chiều kim đồng hồ, tạo chuỗi giống như domino.</li>
+        </ol>
+        <h4>Điều kiện thắng</h4>
+        <ul>
+          <li>Người <strong>đánh hết thẻ</strong> đầu tiên chiến thắng. Càng ít thẻ còn lại càng tốt.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-4" class="card">
+      <h2>4. Mẹo chơi</h2>
+      <div class="tip">
+        <ul>
+          <li><strong>Tốc độ + Chính xác</strong> quyết định chiến thắng—hãy gọi ra biểu tượng bạn thấy trước tiên.</li>
+          <li>Quét dọc theo <strong>viền thẻ</strong> đôi khi nhanh hơn nhìn vào trung tâm.</li>
+          <li>Nếu chơi với trẻ em, hãy giảm nhịp độ để mọi người đều vui.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec-5" class="card">
+      <h2>5. Lưu ý an toàn</h2>
+      <div class="warn">
+        <ul>
+          <li>Không gấp hoặc làm nhăn thẻ.</li>
+          <li>Tránh để trẻ nhỏ ngậm thẻ vào miệng.</li>
+          <li>Bảo quản nơi khô ráo, thoáng mát.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025. Sabble Manual (VI). Tài liệu chuẩn bị cho in ấn và phát hành.</p>
+    </footer>
+  </div>
+</body>
+</html>

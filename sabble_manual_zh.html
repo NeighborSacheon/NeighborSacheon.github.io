@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sabble 游戏说明书（简体中文）</title>
+<style>
+  :root{
+    --fg:#111;
+    --muted:#555;
+    --accent:#5b74f9;
+    --border:#e6e6e6;
+    --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,
+    'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Noto Sans SC',sans-serif;
+    line-height:1.7}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .container{max-width:880px;margin:24px auto;padding:20px}
+  header{border-bottom:1px solid var(--border);margin-bottom:20px;padding-bottom:12px}
+  header h1{font-size:28px;margin:0}
+  header p{margin:6px 0;color:var(--muted)}
+  nav.toc{background:#fafafa;border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:16px 0 28px}
+  nav.toc strong{display:block;margin-bottom:6px}
+  nav.toc ol{margin:0 0 0 1rem;padding:0}
+  section{margin:26px 0}
+  h2{font-size:22px;margin:0 0 10px}
+  h3{font-size:18px;margin:18px 0 8px}
+  .card{border:1px solid var(--border);border-radius:12px;padding:16px;margin:12px 0;background:white}
+  ul,ol{padding-left:1.2rem}
+  .tip{border-left:4px solid #00b894;background:#f5fffa;padding:12px;border-radius:8px;margin:12px 0}
+  .warn{border-left:4px solid #e17055;background:#fff8f6;padding:12px;border-radius:8px;margin:12px 0}
+  footer{margin-top:32px;color:var(--muted);font-size:14px;border-top:1px solid var(--border);padding-top:12px}
+
+  @media print{
+    body{color:#000}
+    a{text-decoration:none;color:#000}
+    nav.toc{break-inside:avoid}
+    section{page-break-inside:avoid}
+    .container{max-width:100%;margin:0;padding:0 10mm}
+    header, footer{border:none}
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎯 Sabble 游戏说明书</h1>
+      <p>适合家人和朋友的快速图形匹配卡牌游戏</p>
+    </header>
+
+    <nav class="toc">
+      <strong>目录</strong>
+      <ol>
+        <li><a href="#sec-1">1. 概览</a></li>
+        <li><a href="#sec-2">2. 游戏原理</a></li>
+        <li><a href="#sec-3">3. 游戏玩法</a>
+          <ol>
+            <li><a href="#sec-3-1">3-1. 堆塔（基础模式）</a>
+              <ol>
+                <li><a href="#sec-3-1-1">3-1-1. 准备</a></li>
+                <li><a href="#sec-3-1-2">3-1-2. 流程</a></li>
+                <li><a href="#sec-3-1-3">3-1-3. 胜利条件</a></li>
+              </ol>
+            </li>
+            <li><a href="#sec-3-2">3-2. 拆塔</a></li>
+            <li><a href="#sec-3-3">3-3. 烫手山芋</a></li>
+            <li><a href="#sec-3-4">3-4. 集卡达人</a></li>
+            <li><a href="#sec-3-5">3-5. Sabble 多米诺</a></li>
+          </ol>
+        </li>
+        <li><a href="#sec-4">4. 小技巧</a></li>
+        <li><a href="#sec-5">5. 注意事项</a></li>
+      </ol>
+    </nav>
+
+    <section id="sec-1" class="card">
+      <h2>1. 概览</h2>
+      <ul>
+        <li><strong>游戏名称：</strong> Sabble</li>
+        <li><strong>玩家人数：</strong> 2–8 人</li>
+        <li><strong>建议年龄：</strong> 6 岁以上</li>
+        <li><strong>游戏时长：</strong> 约 10–15 分钟</li>
+        <li><strong>组件：</strong> 55 张符号卡（每张有 8 个不同符号）</li>
+      </ul>
+      <p><strong>目标：</strong> 成为第一个找出并喊出两张卡牌之间 <em>唯一相同符号</em> 的玩家！</p>
+    </section>
+
+    <section id="sec-2" class="card">
+      <h2>2. 游戏原理</h2>
+      <p>Sabble 中任意两张卡牌都 <strong>恰好只有一个</strong> 相同符号。对比 A 卡与 B 卡，总会存在唯一匹配。
+      你的目标是 <strong>比他人更快</strong> 找到该符号并大声喊出。</p>
+    </section>
+
+    <section id="sec-3" class="card">
+      <h2>3. 游戏玩法</h2>
+      <p>Sabble 提供多种模式。经典模式为 <strong>堆塔</strong>，变体包括 <strong>拆塔</strong>、<strong>烫手山芋</strong>、<strong>集卡达人</strong> 和 <strong>Sabble 多米诺</strong>。</p>
+
+      <section id="sec-3-1">
+        <h3>3-1. 堆塔（基础模式）</h3>
+
+        <section id="sec-3-1-1">
+          <h4>3-1-1. 准备</h4>
+          <ol>
+            <li>将整副卡牌洗混。</li>
+            <li>每位玩家面前放置 1 张明牌，其余卡牌背面朝上置于中央作为抽牌堆。</li>
+            <li>翻开抽牌堆顶牌作为本轮中央卡。</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-2">
+          <h4>3-1-2. 流程</h4>
+          <ol>
+            <li>所有玩家寻找自己面前的卡与中央卡之间的 <strong>唯一相同符号</strong>。</li>
+            <li>发现后，立即 <strong>大声喊出符号名称</strong>。</li>
+            <li>最先正确喊出的玩家获得中央卡。</li>
+            <li>再翻开一张新中央卡，继续游戏。</li>
+          </ol>
+        </section>
+
+        <section id="sec-3-1-3">
+          <h4>3-1-3. 胜利条件</h4>
+          <ul>
+            <li>当牌堆用尽时，<strong>获得卡牌最多</strong> 的玩家获胜。</li>
+          </ul>
+        </section>
+      </section>
+
+      <section id="sec-3-2">
+        <h3>3-2. 拆塔</h3>
+        <h4>准备</h4>
+        <ol>
+          <li>将卡牌平均分配给所有玩家。每人持有一叠个人牌堆（背面朝下），并翻开最上方一张为明牌。</li>
+        </ol>
+        <h4>流程</h4>
+        <ol>
+          <li>寻找你自己的明牌与中央卡的匹配符号。</li>
+          <li>匹配成功后，将 <strong>你的卡</strong> 盖到中央牌堆上。</li>
+        </ol>
+        <h4>胜利条件</h4>
+        <ul>
+          <li><strong>最先打出所有手牌</strong> 的玩家获胜。</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-3">
+        <h3>3-3. 烫手山芋</h3>
+        <h4>准备</h4>
+        <ol>
+          <li>每位玩家发 1 张牌。持牌时使正面朝向自己，仅自己可见。</li>
+        </ol>
+        <h4>流程</h4>
+        <ol>
+          <li>在你的牌与其他任一玩家的牌之间寻找匹配符号。</li>
+          <li>找到后，喊出对方的名字与符号（例：“小明，骷髅！”），并把你的牌递给对方。</li>
+          <li>对方此时持牌增加，需尽快找到匹配并继续传递。</li>
+        </ol>
+        <h4>胜利条件</h4>
+        <ul>
+          <li>一轮结束时，<strong>手中无牌</strong> 的玩家为胜者；<strong>持牌最多</strong> 的玩家为败者。</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-4">
+        <h3>3-4. 集卡达人</h3>
+        <h4>准备</h4>
+        <ol>
+          <li>在中央放置 1 张明牌。</li>
+          <li>其余作为背面朝上的抽牌堆。</li>
+        </ol>
+        <h4>流程</h4>
+        <ol>
+          <li>从抽牌堆翻开新牌，与中央参考牌比对，寻找匹配符号。</li>
+          <li>最先正确喊出的玩家获得新翻的那张牌。</li>
+          <li>每次更新中央参考牌并重复。</li>
+        </ol>
+        <h4>胜利条件</h4>
+        <ul>
+          <li>牌堆耗尽后，<strong>收集最多卡牌</strong> 的玩家获胜。</li>
+        </ul>
+      </section>
+
+      <section id="sec-3-5">
+        <h3>3-5. Sabble 多米诺</h3>
+        <h4>准备</h4>
+        <ol>
+          <li>将所有卡牌洗混，给每位玩家发 5 张。</li>
+          <li>中央翻开 1 张牌作为起始牌。</li>
+        </ol>
+        <h4>流程</h4>
+        <ol>
+          <li>从你的手牌中打出与当前中央/链尾牌 <strong>有匹配符号</strong> 的一张牌。</li>
+          <li>你打出的牌成为新的 <strong>参考牌</strong>。</li>
+          <li>按顺时针继续，像多米诺一样连成链。</li>
+        </ol>
+        <h4>胜利条件</h4>
+        <ul>
+          <li><strong>最先出完所有手牌</strong> 的玩家获胜；剩牌越少越有利。</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="sec-4" class="card">
+      <h2>4. 小技巧</h2>
+      <div class="tip">
+        <ul>
+          <li><strong>速度 + 准确</strong> 决定胜负——优先喊出你最先看到的符号。</li>
+          <li>先扫视卡牌的 <strong>边缘</strong>，往往比直盯中央更快。</li>
+          <li>与儿童一起玩时可适当放慢节奏，让每个人都能享受游戏。</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sec-5" class="card">
+      <h2>5. 注意事项</h2>
+      <div class="warn">
+        <ul>
+          <li>请勿折叠或弄皱卡牌。</li>
+          <li>避免幼儿将卡牌放入口中。</li>
+          <li>置于干燥阴凉处保存。</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025. Sabble Manual（ZH-CN）。本文件用于印刷与发行。</p>
+    </footer>
+  </div>
+</body>
+</html>
