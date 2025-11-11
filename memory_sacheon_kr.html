@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>사천 전통 메모리게임 | 게임 안내서</title>
+<style>
+:root{
+  --bg:#fdfbf7;
+  --accent1:#1f6f6d;  /* 단청 청록 */
+  --accent2:#c4332e;  /* 단청 적색 */
+  --accent3:#f2a000;  /* 단청 황색 */
+  --ink:#222;
+  --border:#e0d8c5;
+}
+body{margin:0;font-family:"Pretendard","Malgun Gothic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:900px;margin:auto;padding:40px 24px;}
+.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+h1{font-size:30px;color:var(--accent2);margin:0 0 8px;}
+.sub{margin:0 0 16px;color:#555;}
+h2{color:var(--accent1);margin-top:0;}
+ul,ol{padding-left:20px;}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+.pill{padding:5px 12px;border-radius:999px;background:#eef7f7;color:#0d5554;border:1px solid #cde0de;font-size:14px;}
+.steps{counter-reset:step;}
+.steps li{list-style:none;position:relative;margin:10px 0;padding:12px 12px 12px 46px;border:1px dashed #ddd;border-radius:12px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent3);color:#000;font-weight:700;}
+.tip{border-left:6px solid var(--accent3);background:#fff8e4;padding:14px;border-radius:12px;margin:12px 0;}
+.warn{border-left:6px solid var(--accent2);background:#ffecec;padding:14px;border-radius:12px;margin:12px 0;}
+.table{width:100%;border-collapse:collapse;margin-top:10px;}
+.table th,.table td{border:1px solid #e5ddc8;padding:10px;text-align:left;}
+.center{text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="card center">
+  <h1>사천 전통 메모리게임</h1>
+  <p class="sub">이웃과 함께 즐기는 기억놀이 보드게임</p>
+  <div class="badges">
+    <span class="pill">인원: 2–6명</span>
+    <span class="pill">소요시간: 10–20분</span>
+    <span class="pill">난이도: 쉬움–보통</span>
+  </div>
+</header>
+
+<section class="card">
+  <h2>1. 게임 소개</h2>
+  <p><b>사천 전통 메모리게임</b>은 사천의 명소와 문화가 담긴 24쌍의 카드를 뒤집으며 같은 그림을 맞추는 기억력 보드게임입니다.  
+  단순한 기억놀이를 넘어, 사천의 자연·음식·축제 등을 함께 이야기하며 즐길 수 있는 이웃 참여형 놀이 콘텐츠입니다.</p>
+</section>
+
+<section class="card">
+  <h2>2. 구성품</h2>
+  <ul>
+    <li>그림 카드 48장 (24쌍) — 남일대 해변, 사천바다케이블카, 와룡산 등</li>
+    <li>카드 뒷면 — 단청무늬 디자인</li>
+    <li>게임 안내서</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>3. 준비하기</h2>
+  <ol>
+    <li>모든 카드를 잘 섞습니다.</li>
+    <li>카드를 뒷면이 위로 보이게 바닥에 네모 모양으로 배열합니다.</li>
+    <li>가장 최근에 사천을 다녀온 사람이 첫 번째로 시작합니다.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>4. 게임 방법</h2>
+  <ol class="steps">
+    <li><b>두 장 뒤집기</b> — 자신의 차례에 카드를 두 장 뒤집어 그림을 확인합니다.</li>
+    <li><b>그림이 같다면</b> — 두 카드를 가져가고 한 번 더 플레이합니다.</li>
+    <li><b>그림이 다르다면</b> — 카드를 원래 위치로 돌려놓고 다음 사람에게 차례를 넘깁니다.</li>
+    <li><b>모든 카드의 짝을 찾으면</b> — 게임이 종료됩니다. 가장 많은 쌍을 찾은 사람이 승리합니다.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>5. 점수 규칙 (선택)</h2>
+  <table class="table">
+    <thead><tr><th>행동</th><th>점수</th></tr></thead>
+    <tbody>
+      <tr><td>짝 맞추기 성공</td><td>+2점</td></tr>
+      <tr><td>연속 두 번 성공</td><td>+1점 추가</td></tr>
+      <tr><td>틀림</td><td>0점</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>6. 난이도 조절</h2>
+  <ul>
+    <li><b>쉬움:</b> 8쌍(16장) 사용</li>
+    <li><b>보통:</b> 16쌍(32장) 사용</li>
+    <li><b>도전:</b> 24쌍(48장) 전체 사용</li>
+  </ul>
+  <div class="tip">카드 수를 줄이거나 펼쳐 보는 시간을 조절하여 누구나 즐길 수 있습니다.</div>
+</section>
+
+<section class="card">
+  <h2>7. 이웃과 함께하는 확장 놀이</h2>
+  <ul>
+    <li><b>이야기 나누기:</b> 맞춘 카드의 장소나 음식에 대한 추억을 서로 이야기합니다.</li>
+    <li><b>속도전:</b> 제한 시간(예: 1분) 안에 가능한 많은 쌍을 맞춥니다.</li>
+    <li><b>협동 모드:</b> 모두 함께 모든 카드를 짝 맞추는 시간을 재며 협력합니다.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>8. 정리 및 보관</h2>
+  <ol>
+    <li>카드를 쌍으로 모아 정리합니다.</li>
+    <li>습기와 햇빛을 피하고 마른 곳에 보관하세요.</li>
+  </ol>
+  <div class="warn"><b>주의:</b> 카드 모서리에 손이 베이지 않도록 천천히 다뤄 주세요.</div>
+</section>
+
+<footer class="card center">
+  <p><b>함께 웃고, 기억하고, 이야기하는 시간</b><br>사천의 멋진 풍경과 전통이 담긴 카드로 이웃과 즐거운 추억을 만들어 보세요.</p>
+</footer>
+
+</div>
+</body>
+</html>

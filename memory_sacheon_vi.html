@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trò Chơi Ghi Nhớ Truyền Thống Sacheon | Sổ tay hướng dẫn</title>
+<style>
+:root{
+  --bg:#fdfbf7;
+  --accent1:#1f6f6d;  /* xanh ngọc dancheong */
+  --accent2:#c4332e;  /* đỏ dancheong */
+  --accent3:#f2a000;  /* vàng dancheong */
+  --ink:#222;
+  --border:#e0d8c5;
+}
+body{margin:0;font-family:"Pretendard","Malgun Gothic",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;}
+.wrap{max-width:900px;margin:auto;padding:40px 24px;}
+.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:24px;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+h1{font-size:30px;color:var(--accent2);margin:0 0 8px;}
+.sub{margin:0 0 16px;color:#555;}
+h2{color:var(--accent1);margin-top:0;}
+ul,ol{padding-left:20px;}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px;}
+.pill{padding:5px 12px;border-radius:999px;background:#eef7f7;color:#0d5554;border:1px solid #cde0de;font-size:14px;}
+.steps{counter-reset:step;}
+.steps li{list-style:none;position:relative;margin:10px 0;padding:12px 12px 12px 46px;border:1px dashed #ddd;border-radius:12px;}
+.steps li::before{counter-increment:step;content:counter(step);position:absolute;left:12px;top:10px;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--accent3);color:#000;font-weight:700;}
+.tip{border-left:6px solid var(--accent3);background:#fff8e4;padding:14px;border-radius:12px;margin:12px 0;}
+.warn{border-left:6px solid var(--accent2);background:#ffecec;padding:14px;border-radius:12px;margin:12px 0;}
+.table{width:100%;border-collapse:collapse;margin-top:10px;}
+.table th,.table td{border:1px solid #e5ddc8;padding:10px;text-align:left;}
+.center{text-align:center;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="card center">
+  <h1>Trò Chơi Ghi Nhớ Truyền Thống Sacheon</h1>
+  <p class="sub">Boardgame gắn kết hàng xóm: cùng lật, nhớ và ghép cặp hình!</p>
+  <div class="badges">
+    <span class="pill">Người chơi: 2–6</span>
+    <span class="pill">Thời lượng: 10–20 phút</span>
+    <span class="pill">Độ khó: Dễ–Trung bình</span>
+  </div>
+</header>
+
+<section class="card">
+  <h2>1. Giới thiệu</h2>
+  <p><b>Trò Chơi Ghi Nhớ Truyền Thống Sacheon</b> sử dụng 24 cặp thẻ về danh thắng và văn hoá của thành phố Sacheon. 
+  Người chơi lật thẻ và tìm hai hình giống nhau. Không chỉ là trò rèn luyện trí nhớ, 
+  đây còn là nội dung vui chơi cộng đồng giúp mọi người trò chuyện về thiên nhiên, ẩm thực và lễ hội của Sacheon.</p>
+</section>
+
+<section class="card">
+  <h2>2. Thành phần</h2>
+  <ul>
+    <li>48 thẻ hình (24 cặp) — Bãi biển Namildae, Cáp treo biển Sacheon, Núi Waryong...</li>
+    <li>Mặt sau thẻ — hoạ tiết <i>dancheong</i> truyền thống</li>
+    <li>Sổ tay hướng dẫn</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>3. Chuẩn bị</h2>
+  <ol>
+    <li>Xáo trộn toàn bộ thẻ.</li>
+    <li>Đặt thẻ úp xuống, sắp theo hình chữ nhật trên bàn.</li>
+    <li>Ai mới đi Sacheon gần đây nhất sẽ đi trước.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>4. Luật chơi</h2>
+  <ol class="steps">
+    <li><b>Lật 2 thẻ</b> — Đến lượt mình, lật 2 thẻ để xem hình.</li>
+    <li><b>Nếu giống nhau</b> — Lấy cặp thẻ đó và được đi thêm một lượt.</li>
+    <li><b>Nếu khác nhau</b> — Úp thẻ lại đúng vị trí, chuyển lượt cho người kế tiếp.</li>
+    <li><b>Kết thúc</b> — Khi tất cả thẻ đã ghép xong, ai có nhiều cặp nhất thắng.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>5. Tính điểm (tuỳ chọn)</h2>
+  <table class="table">
+    <thead><tr><th>Hành động</th><th>Điểm</th></tr></thead>
+    <tbody>
+      <tr><td>Ghép đúng một cặp</td><td>+2 điểm</td></tr>
+      <tr><td>Liên tiếp ghép đúng 2 lần</td><td>+1 điểm thưởng</td></tr>
+      <tr><td>Ghép sai</td><td>0 điểm</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>6. Điều chỉnh độ khó</h2>
+  <ul>
+    <li><b>Dễ:</b> dùng 8 cặp (16 thẻ)</li>
+    <li><b>Trung bình:</b> dùng 16 cặp (32 thẻ)</li>
+    <li><b>Thử thách:</b> dùng toàn bộ 24 cặp (48 thẻ)</li>
+  </ul>
+  <div class="tip">Bạn có thể giảm số thẻ hoặc cho xem nhanh thẻ trong vài giây để mọi người đều chơi được.</div>
+</section>
+
+<section class="card">
+  <h2>7. Chơi vui cùng hàng xóm</h2>
+  <ul>
+    <li><b>Kể chuyện:</b> Chia sẻ kỷ niệm về địa điểm/ẩm thực trên cặp thẻ vừa ghép.</li>
+    <li><b>Đua tốc độ:</b> Trong 1 phút, ghép được càng nhiều cặp càng tốt.</li>
+    <li><b>Chế độ hợp tác:</b> Cùng nhau ghép hết các thẻ và bấm thời gian hoàn thành.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>8. Thu dọn & bảo quản</h2>
+  <ol>
+    <li>Gom thẻ theo từng cặp để cất.</li>
+    <li>Tránh ẩm và ánh nắng; bảo quản nơi khô ráo.</li>
+  </ol>
+  <div class="warn"><b>Lưu ý:</b> Cầm thẻ nhẹ nhàng, tránh làm quăn hoặc rách mép.</div>
+</section>
+
+<footer class="card center">
+  <p><b>Cùng cười, cùng nhớ, cùng kể chuyện</b><br>Với những tấm thẻ mang phong cảnh và truyền thống Sacheon, 
+  hãy tạo nên ký ức đẹp với cộng đồng của bạn.</p>
+</footer>
+
+</div>
+</body>
+</html>
